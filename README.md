@@ -44,8 +44,8 @@ var docClient = new AWS.DynamoDB.DocumentClient() ;
          var params = {
         TableName :"Person",
                      Item:{
-                              "FirstName" : "John",
-                               "LastName"  :"Smith",
+                              "FirstName" : "",
+                               "LastName"  :"",
 
 "info": {
 
