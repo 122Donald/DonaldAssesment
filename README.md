@@ -1,3 +1,4 @@
+// JavaScript File
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <scrip>
@@ -14,7 +15,7 @@
         idToken = url.searchParams.get("id_token");
         if(idToken != null) {
 
-        document.getElementById ("WelcomeMsg").innerHTML = "signed in";
+        document.getElementById ("WelcomeMsg").innerHTML = "Subscribe";
     auth();
 
     }
@@ -23,7 +24,7 @@
     function auth(){
     AWS.config.update({
     region:"us-east-1",
-    //endpoint:"http://localhost:8000',
+
 
 
     }};
@@ -44,7 +45,7 @@ var docClient = new AWS.DynamoDB.DocumentClient() ;
          var params = {
         TableName :"Person",
                      Item:{
-                              "FirstName" : "",
+                              "Email Address" : "",
                                "LastName"  :"",
 
 "info": {
